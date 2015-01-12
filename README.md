@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 DMware
 ======
 A simple online RPG toolkit utility written in JavaScript, HTM5L, and CoffeeScript using Meteor and Meteorite packages.
@@ -45,5 +44,5 @@ TODO
 ----
 A lot... :) 
 =======
-# dmware
->>>>>>> 015b7ced3977eed7ffe0167d05e3a7aeea2b9af1
+
+
