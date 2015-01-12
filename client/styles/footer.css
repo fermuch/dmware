@@ -1,0 +1,34 @@
+/*
+* Filename: footer.css
+* Author: Joshua Michael Waggoner (rabbitfighter81@gmail.com)
+* GitHub: www.github.com.rabbitfighter81/DMware
+* Purpose: CSS declarations for footer template go here
+*/
+
+footer {
+	margin:30px;
+}
+
+.date p{
+	color:#EEEEEE;
+	font-size: 1.666em;
+	font-family: 'IM Fell English', serif;
+}
+
+.copyright p{
+
+	color: #E60000;
+	margin-top: 10px;
+	font-family: 'IM Fell English', serif;
+	font-size: 1.333em;
+}
+
+.bottom_links {
+	color: #E60000;
+	margin-top: 10px;
+	font-family: 'Roboto', serif;
+	font-size: 1.133em;
+}
+
+
+

@@ -1,0 +1,13 @@
+*******************************************************************
+***********************  DMware MANIFESTO   ***********************
+*******************************************************************
+*
+* These principles are paramount to our design ideals:
+*   - Simple CSS 
+*   - Intuitive UI
+*   - Simplicity
+*   - Ease of use
+*   - Easy to read code (If possible)
+*   - Fun user experience
+*
+*******************************************************************

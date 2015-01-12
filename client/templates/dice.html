@@ -1,0 +1,120 @@
+<!-- Filename: dice.html -->
+<!-- Author: Joshua Michael Waggoner (rabbitfighter81@gmail.com) -->
+<!-- GitHub: github.com/rabbitfighter81/DMware -->
+<!-- Purpose: HTML for site's dice page. -->
+<template name="dice">
+
+	<head>
+		<!-- Link to the font -->
+		<link href='http://fonts.googleapis.com/css?family=IM+Fell+English|Cabin|Josefin+Slab|Droid+Serif|Francois+One|Roboto:300,400|Open+Sans:400,300|Crimson+Text|Special+Elite|Lato' rel='stylesheet' type='text/css'>
+		<!-- Title -->
+		<title>DMware - RPG Toolkit</title> 
+	</head>
+
+	<body>
+
+		<div id="header">
+			<h1 class="headline">Dice</h1>
+		</div>
+
+		<div id="content">
+		<h2>Select Dice</h2>
+			<select id="select_numDice" class="select" onchange="setNumDice()">
+				<option id="numDice_1" value="1">1 Die</option>
+				<option id="numDice_2" value="2" selected="true">2 Dice</option>
+				<option id="numDice_3" value="3">3 Dice</option>
+				<option id="numDice_4" value="4">4 Dice</option>
+				<option id="numDice_5" value="5">5 Dice</option>
+				<option id="numDice_7" value="7">7 Dice</option>
+				<option id="numDice_8" value="8">8 Dice</option>
+				<option id="numDice_9" value="9">9 Dice</option>
+				<option id="numDice_10" value="10">10 Dice</option>
+				<option id="numDice_11" value="11">11 Dice</option>
+				<option id="numDice_12" value="12">12 Dice</option>
+				<option id="numDice_13" value="13">13 Dice</option>
+				<option id="numDice_14" value="14">14 Dice</option>
+				<option id="numDice_15" value="15">15 Dice</option>
+				<option id="numDice_16" value="16">16 Dice</option>
+				<option id="numDice_17" value="17">17 Dice</option>
+				<option id="numDice_18" value="18">18 Dice</option>
+				<option id="numDice_19" value="19">19 Dice</option>
+				<option id="numDice_20" value="20">20 Dice</option>
+				<option id="numDice_custom" value="custom">Custom</option>
+			</select>
+
+
+			<select id="select_numSides" class="select" onchange="setNumSides()">
+				<option id="numSides_4" value="4">4-sided</option>
+				<option id="numSides_6" value="6" selected="true">Traditional 6-sided</option>
+				<option id="numSides_8" value="8">8-sided</option>
+				<option id="numSides_10" value="10">10-sided</option>
+				<option id="numSides_12" value="12">12-sided</option>
+				<option id="numSides_16" value="16">16-sided</option>
+				<option id="numSides_18" value="18">18-sided</option>
+				<option id="numSides_20" value="20">20-sided</option>
+				<option id="numSides_50" value="50">50-sided</option>
+				<option id="numSides_100" value="100">100-sided</option>
+				<option id="numSides_custom" value="custom">Custom</option>
+			</select>
+
+			<button class="button_roll">Roll</button>
+
+			<table class="table_dice">  
+				{{#each all_items}}
+				    <div class="dice">{{this.value}}</div>
+				{{/each}} 
+			</table>
+		
+
+			<h3 id="rollInfo" style="clear:left;">Select dice and press button to roll</h3>
+
+			<div id="statistics" class="statistics">
+			
+				<table border="0px;" width="65%" cellpadding="10" cellspacing="5" align="center">
+					<tr>
+						<th colspan="5" height="65px"><br><h2>Statistics</h2></th>
+					</tr>
+					<tr height="60px">
+						<th  width="100px" >Roll sequence: </th>
+						<th  width="100px" >Number of dice: </th>
+						<th  width="100px" >Number of sides: </th>
+						<th  width="100px" >Roll Average: </th>
+					</tr>
+					<tr height="60px">
+						<td  width="100px" >{{rollSequence}}</td>
+						<td  width="100px" >{{numDice}}</td>
+						<td  width="100px" >{{numSides}}</td>
+						<td  width="100px" >{{average}}</td>
+					</tr>
+				</table>
+
+			</div>
+			
+			<div  id="duplicates" class="duplicates">
+				<table  border="0px;" width="65%" cellpadding="10" cellspacing="5" align="center">
+					<tr>
+						<th colspan="2"><h2><br>Duplicates</h2></th>
+					</tr>
+					{{#each all_duplicates}}
+					<tr>
+						<td width="50%">
+							<div class="dice_duplicates">{{this.duplicate}}</div>
+						</td>
+						<td width="50%">
+							<div class="number_duplicates">{{this.duplicates}} times</div>
+						</td>
+					</tr>
+					{{/each}}
+				</table>
+			</div>
+		</div>
+
+		<footer>
+	    	{{> footer}}
+		</footer>
+		
+	</body>
+ 
+</template>
+
+

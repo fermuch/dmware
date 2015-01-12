@@ -1,0 +1,32 @@
+<!-- Filename: home.html -->
+<!-- Author: @rabbitfighter81 -->
+<!-- Usage: This file is the home page for DMware.com -->
+
+<template name="home">
+	<head>
+		<title>DMware - RPG Toolkit</title>
+		<link href='http://fonts.googleapis.com/css?family=IM+Fell+English|Cabin|Josefin+Slab|Droid+Serif|Francois+One|Roboto:300,400|Open+Sans:400,300|Crimson+Text|Special+Elite' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<div id="header">
+	    	<h1 class="greeting">{{greeting}}</h1>
+	  		<h2 class="purpose">{{purpose}}</h2>
+	    </div>
+	    <div id="content">
+	 		<p class="mission">{{mission}}</p>
+			<ul class="features">
+				<li>&#9872; Create <strong><u>user profiles</u></strong></li>
+				<li>&#9872; Generate complex <strong><u>dice rolls</u></strong>  (of any multitude and any sided dice)</li>
+				<li>&#9872; Create and manage <strong><u>timers</u></strong></li>
+				<li>&#9872; Create <strong><u>characters</u></strong> and keep track of attributes</li>
+				<li>&#9872; Create <strong><u>game event logs</u></strong> to keep a record of <strong>game events</strong></li>
+				<li>&#9872; Allow for <strong><u>P2P connectivity</u></strong> and <strong><u>chat</u></strong> for remote gaming with freinds</li>
+				<li>And more...</li>
+			</ul>
+			<p class="launch">{{launch}}</p>
+	`	</div>
+		<footer>
+			{{> footer}}
+		</footer>
+	</body>
+</template>

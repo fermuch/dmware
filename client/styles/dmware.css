@@ -1,0 +1,93 @@
+/*
+* Filename: dmware.css
+* Author: Joshua Michael Waggoner (rabbitfighter81@gmail.com)
+* GitHub: www.github.com.rabbitfighter81/DMware
+* Purpose: CSS declarations for dmware.html go here
+*/
+body {
+	background-color: #262626;
+	text-align: center;
+	padding:0;
+	height:100%;
+}
+
+h1 {
+	color: #E60000;
+	font-family: 'IM Fell English', serif;
+	
+	text-align: center;
+	border-color: red;
+	/*text-decoration: underline;*/
+
+}
+
+h2 {
+	color: #CCFFCC;
+	font-family: 'IM Fell English', serif; 
+
+}
+
+h3 {
+	color: #EEEEEE;
+	font-family: 'IM Fell English', serif; 
+
+}
+
+h4 {
+	color: red;
+	font-family: 'IM Fell English', serif; 
+
+}
+
+p {
+	font-family: 'Special Elite', serif; 
+	font-family: ' font-size: 1.333em;';
+    font-size: 1.333em;
+	color: #CCFFCC;
+	line-height: 1.333em;
+}
+
+p {
+	font-family: 'Roboto';
+    font-size: 1.333em;
+    color: #EEEEEE;
+    margin-top: 23.333px;
+}
+
+
+
+footer{
+    height: auto;
+    bottom: 10px;
+    text-align: center;
+}
+
+ul { 
+    display: block;
+    list-style-type: none;
+    margin-top: 0px;
+    margin-bottom: 1 em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+    color:white;
+
+    
+}
+
+th, td, tr {
+	font-family: 'Menlo';
+	color: #EEEEEE;
+	font-size: 1.05em;
+	line-height: 1.333em;
+}
+
+
+td {
+	font-size: 1.2em;
+}
+
+
+
+
+
