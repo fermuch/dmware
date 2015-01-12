@@ -1,6 +1,6 @@
 DMware
 ======
-A simple online RPG toolkit utility written in JavaScript, HTM5L, and CoffeeScript using Meteor and Meteorite packages.
+A simple online RPG toolkit utility written in JavaScript, HTML, and CSS using meteor and mrt packages.
 
 Navigation
 -----------
