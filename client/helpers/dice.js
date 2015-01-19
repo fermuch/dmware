@@ -196,7 +196,7 @@ if (Meteor.isClient) {
       for (var i = 1; i <= numDice; i++) {
 
         // Get the random number
-        var random = (Math.floor(Math.random() * numSides) + 1);
+        var random = (Math.floor(Random.fraction() * numSides) + 1);
 
         // Insert the number into the duplicate matrix
         duplicates[random] = (duplicates[random] + 1);
